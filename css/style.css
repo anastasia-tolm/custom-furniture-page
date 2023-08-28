@@ -296,6 +296,12 @@ button {
     font-size: calc(32px + 16 * (100vw - 375px) / 649);
   }
 }
+@media (max-width: 374px) {
+  .hero__title {
+    font-size: calc(28px + 4 * (100vw - 320px) / 54);
+  }
+}
+
 .hero__link {
   justify-self: end;
   align-self: end;
@@ -615,7 +621,7 @@ button {
 }
 .projects__text-overlay {
   position: absolute;
-  width: -webkit-fill-available;
+  width: 100%;
   max-height: 11.3%;
   left: 0;
   bottom: 0;
