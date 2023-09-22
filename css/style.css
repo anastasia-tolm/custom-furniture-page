@@ -90,6 +90,17 @@ button {
   }
 }
 
+@media (max-width: 767px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    background-color: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+}
 .header__container {
   display: flex;
   justify-content: space-between;
@@ -101,18 +112,6 @@ button {
     min-height: 43px;
     margin-top: 8px;
     margin-bottom: 0px;
-  }
-}
-
-@media (max-width: 767px) {
-  .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 5;
-    background-color: #fff;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   }
 }
 .header__logo {
@@ -217,6 +216,7 @@ button {
 }
 .menu__list {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   margin-right: 207px;
   gap: 8px;
@@ -246,18 +246,29 @@ button {
 }
 .menu__link {
   color: #212529;
+  transition: color 0.3s;
+}
+@media (min-width: 992px) {
+  .menu__link:hover {
+    color: #DDD7C0;
+  }
 }
 @media (max-width: 767px) {
   .menu__link {
     display: block;
   }
 }
-.menu__tel {
-  display: block;
+.menu__tel-link {
   white-space: nowrap;
+  transition: color 0.3s;
+}
+@media (min-width: 992px) {
+  .menu__tel-link:hover {
+    color: #DDD7C0;
+  }
 }
 @media (max-width: 992px) {
-  .menu__tel {
+  .menu__tel-link {
     display: none;
   }
 }
@@ -310,6 +321,12 @@ button {
   text-underline-offset: 5px;
   white-space: nowrap;
   color: #212529;
+  transition: color 0.3s;
+}
+@media (min-width: 992px) {
+  .hero__link:hover {
+    color: #DDD7C0;
+  }
 }
 .hero__block_1 {
   display: flex;
@@ -663,26 +680,24 @@ button {
      object-fit: cover;
 }
 
-.testimonials_container {
+.testimonials__container {
   margin-bottom: 121px;
 }
 @media (max-width: 992px) {
-  .testimonials_container {
+  .testimonials__container {
     margin-bottom: 72px;
   }
 }
 @media (max-width: 375px) {
-  .testimonials_container {
+  .testimonials__container {
     margin-bottom: 45px;
   }
 }
-
 .testimonials__items {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   margin-top: 33px;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
+  gap: 20px;
 }
 @media (max-width: 992px) {
   .testimonials__items {
@@ -726,7 +741,7 @@ button {
   }
 }
 .testimonials__item_text {
-  max-width: 365px;
+  max-width: 363px;
   margin: auto;
   padding-bottom: 57px;
   text-align: center;
@@ -830,8 +845,17 @@ button {
   font-size: 16px;
   line-height: 140%;
   white-space: nowrap;
+  cursor: pointer;
   color: #fff;
   background-color: #212529;
+  border: #212529;
+  transition: all 0.3s;
+}
+@media (min-width: 992px) {
+  .subscribe__form_button:hover {
+    background-color: #DDD7C0;
+    color: #212529;
+  }
 }
 @media (max-width: 375px) {
   .subscribe__form_button {
@@ -918,6 +942,12 @@ button {
 }
 .footer__politics_link {
   white-space: nowrap;
+  transition: color 0.3s;
+}
+@media (min-width: 992px) {
+  .footer__politics_link:hover {
+    color: #DDD7C0;
+  }
 }
 @media (max-width: 1439px) {
   .footer__politics_link {
@@ -953,6 +983,7 @@ button {
 }
 .footer__socials {
   display: flex;
+  flex-wrap: wrap;
   justify-self: end;
   padding-top: 25px;
   gap: 40px;
@@ -976,6 +1007,17 @@ button {
     justify-content: center;
     padding-top: 0px;
     gap: 40px;
+  }
+}
+.footer__socials-link {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #212529;
+  transition: color 0.3s;
+}
+@media (min-width: 992px) {
+  .footer__socials-link:hover {
+    color: #DDD7C0;
   }
 }
 
