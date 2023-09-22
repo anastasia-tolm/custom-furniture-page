@@ -1,3 +1,31 @@
+@font-face {
+    font-family: "Helvetica";
+    font-display: swap;
+    src: url("../fonts/helvetica_regular.woff2") format("woff2"), url("../fonts/helvetica_regular.woff") format("woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Helvetica";
+    font-display: swap;
+    src: url("../fonts/helvetica_bold.woff2") format("woff2"), url("../fonts/helvetica_bold.woff") format("woff");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-display: swap;
+    src: url("../fonts/roboto_regular.woff2") format("woff2"), url("../fonts/roboto_regular.woff") format("woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-display: swap;
+    src: url("../fonts/roboto_bold.woff2") format("woff2"), url("../fonts/roboto_bold.woff") format("woff");
+    font-weight: 900;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -314,7 +342,7 @@ button {
 }
 .hero__link {
   align-self: end;
-  padding-bottom: 7px;
+  padding-bottom: 11px;
   font-size: 18px;
   line-height: 21px;
   text-decoration: underline;
@@ -1014,11 +1042,4 @@ button {
   .footer__socials-link:hover {
     color: #DDD7C0;
   }
-}
-
-@font-face {
-  font-family: "Helvetica";
-  src: url(../font/helvetica_regular.otf);
-  font-style: normal;
-  font-weight: normal;
 }
