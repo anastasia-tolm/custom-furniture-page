@@ -427,7 +427,6 @@ button {
     margin-bottom: 55px;
   }
 }
-
 .about__body {
   display: grid;
   grid-template-columns: 1fr 49.27%;
@@ -527,7 +526,6 @@ button {
     margin-bottom: 39px;
   }
 }
-
 .steps__body {
   display: grid;
   grid-template-columns: 1fr 49.27%;
@@ -612,7 +610,6 @@ button {
     margin-bottom: 53px;
   }
 }
-
 .projects__heading {
   margin-bottom: 32px;
 }
@@ -773,7 +770,6 @@ button {
     margin-bottom: 56px;
   }
 }
-
 .subscribe__block {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -868,10 +864,9 @@ button {
   gap: 8px;
 }
 
-.footer_conteiner {
+.footer__container {
   margin-bottom: 16px;
 }
-
 .footer__body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -1026,4 +1021,4 @@ button {
   src: url(../font/helvetica_regular.otf);
   font-style: normal;
   font-weight: normal;
-}/*# sourceMappingURL=style.css.map */
+}
