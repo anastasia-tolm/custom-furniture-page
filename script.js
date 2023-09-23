@@ -19,16 +19,17 @@ if (iconMenu) {
 }
 
 // Прокрутка при клике 
-const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
-if (menuLinks.length > 0) {
-    menuLinks.forEach(menuLink => {
-        menuLink.addEventListener("click", onMenuLinkClick);
+
+const Links = document.querySelectorAll('.link[data-goto]');
+if (Links.length > 0) {
+    Links.forEach(Link => {
+        Link.addEventListener("click", onLinkClick);
     });
 
-    function onMenuLinkClick(e) {
-        const menuLink = e.target;
-        if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)) {
-            const gotoBlock = document.querySelector(menuLink.dataset.goto);
+    function onLinkClick(e) {
+        const Link = e.target;
+        if (Link.dataset.goto && document.querySelector(Link.dataset.goto)) {
+            const gotoBlock = document.querySelector(Link.dataset.goto);
             const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight; //- document.querySelector('header').offsetHeight; для фикисированной шапки
 
             if (iconMenu.classList.contains('menu__icon_active')) {
