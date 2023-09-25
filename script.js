@@ -4,7 +4,9 @@ const footerYearElement = document.querySelector('.footer__year');
 const today = new Date();
 const year = today.getFullYear();
 
-footerYearElement.textContent = year;
+if (footerYearElement) {
+  footerYearElement.textContent = year;
+}
 
 // Бургер
 
