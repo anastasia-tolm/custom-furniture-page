@@ -10,3 +10,8 @@
 - БЭМ
 - Семантическая вёрстка
 - Адаптивная вёрстка
+
+## Обзор
+
+![image](https://github.com/anastasia-tolm/custom-furniture-page/img/review.png)
+
