@@ -13,5 +13,5 @@
 
 ## Обзор
 
-![image](.img/review.png)
+![image](./img/review.png)
 
