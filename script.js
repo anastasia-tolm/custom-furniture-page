@@ -1,10 +1,10 @@
 //  Смена года в копирайте
 
-const footerYearEl = document.querySelector('.footer__year');
-let today = new Date();
-let year = today.getFullYear();
+const footerYearElement = document.querySelector('.footer__year');
+const today = new Date();
+const year = today.getFullYear();
 
-footerYearEl.textContent = year;
+footerYearElement.textContent = year;
 
 // Бургер
 
@@ -20,17 +20,17 @@ if (iconMenu) {
 
 // Прокрутка при клике 
 
-const Links = document.querySelectorAll('.link[data-goto]');
-if (Links.length > 0) {
-    Links.forEach(Link => {
-        Link.addEventListener("click", onLinkClick);
+const  linkElements = document.querySelectorAll('.link[data-goto]');
+if (linkElements.length > 0) {
+     linkElements.forEach(linkElement => {
+         linkElement.addEventListener("click", clickedLink);
     });
 
-    function onLinkClick(e) {
-        const Link = e.target;
-        if (Link.dataset.goto && document.querySelector(Link.dataset.goto)) {
-            const gotoBlock = document.querySelector(Link.dataset.goto);
-            const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight; //- document.querySelector('header').offsetHeight; для фикисированной шапки
+    function clickedLink(e) {
+        const  linkElement = e.target;
+        if (linkElement.dataset.goto && document.querySelector(linkElement.dataset.goto)) {
+            const gotoBlock = document.querySelector(linkElement.dataset.goto);
+            const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
 
             if (iconMenu.classList.contains('menu__icon_active')) {
                 document.body.classList.remove('body_lock'); // Запрет скролла при открытом меню
